@@ -1,10 +1,16 @@
+import java.util.Scanner;
 public class TestApp{
 	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
 		Person p1= new Person();
-		p1.name="Matiz";
-		p1.className="SP20-BSE-B";
-		p1.age=21;
-		p1.id=42;
+		System.out.printf("Enter your name:\t");
+		p1.name=scan.nextLine();
+		System.out.printf("\nEnter your class name:\t");
+		p1.className=scan.nextLine();
+		System.out.printf("\nEnter your age:\t");
+		p1.age=scan.nextInt();
+		System.out.printf("\nEnter your id:\t");
+		p1.id=scan.nextInt();
 		printData(p1);
 	}
 	static void printData(Person person){
