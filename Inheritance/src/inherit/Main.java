@@ -12,19 +12,23 @@ public class Main   {
         System.out.println("Press 2 for Worker");
         int dec = scanner.nextInt();
         if(dec==1){
+
             System.out.println("Enter your id");
             String id =scanner.nextLine();
             System.out.println("Enter your marks");
             double marks=scanner.nextDouble();
-            Person student = new Student(name,age,id,marks);
+            Student student = new Student(name,age,id,marks);
             student.gettingOld(age);
+            System.out.println(student.status(marks));
 
 
         }else if(dec==2){
             System.out.println("Enter your salary");
             double salary= scanner.nextDouble();
-            Person employee= new worker(name,age,salary);
+            worker employee= new worker(name,age,salary);
             employee.gettingOld(age);
+            employee.totalSalary(salary);
+
         }
     }
 }

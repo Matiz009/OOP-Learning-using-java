@@ -22,19 +22,21 @@ public class Student extends Person{
         return id;
     }
 
+    @Override
+    void gettingOld(int age) {
+        super.gettingOld(age);
+    }
+
     public void setId(String id) {
         this.id = id;
     }
 
-    @Override
-    public int getAge() {
-        return super.getAge();
-    }
-    void status(double marks){
+    boolean status(double marks){
         if (marks>=50.0){
             System.out.println("pass");
         }else if(marks<50.00){
             System.out.println("fail");
         }
+        return false;
     }
 }

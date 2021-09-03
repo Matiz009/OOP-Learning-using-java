@@ -17,9 +17,10 @@ public class worker extends Person{
     }
 
     @Override
-    public int getAge() {
-        return super.getAge();
+    void gettingOld(int age) {
+        super.gettingOld(age);
     }
+
     public void totalSalary(double increase){
         salary=salary+increase;
         setSalary(salary);
