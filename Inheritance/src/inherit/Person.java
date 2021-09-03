@@ -1,8 +1,25 @@
 package inherit;
 
 public class Person {
-    public String name;
-    public int age;
+    private String name;
+
+    protected String getName() {
+        return name;
+    }
+
+    protected void setName(String name) {
+        this.name = name;
+    }
+
+    protected int getAge() {
+        return age;
+    }
+
+    protected void setAge(int age) {
+        this.age = age;
+    }
+
+    protected int age;
 
     public Person(String name, int age) {
         this.name = name;
