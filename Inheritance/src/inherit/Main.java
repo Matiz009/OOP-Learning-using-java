@@ -19,6 +19,8 @@ public class Main   {
             double marks=scanner.nextDouble();
             Student student = new Student(name,age,id,marks);
             student.gettingOld(age);
+            System.out.println("Name of student "+ student.getName());
+            System.out.println("Registration Number"+ student.getId());
             System.out.println(student.status(marks));
 
 
@@ -26,6 +28,7 @@ public class Main   {
             System.out.println("Enter your salary");
             double salary= scanner.nextDouble();
             worker employee= new worker(name,age,salary);
+            System.out.println("Name of employee " +employee.getName());
             employee.gettingOld(age);
             employee.totalSalary(salary);
 

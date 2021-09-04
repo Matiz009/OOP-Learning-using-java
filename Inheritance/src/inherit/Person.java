@@ -2,6 +2,7 @@ package inherit;
 
 public class Person {
     private String name;
+    private int age;
 
     protected String getName() {
         return name;
@@ -18,8 +19,6 @@ public class Person {
     protected void setAge(int age) {
         this.age = age;
     }
-
-    protected int age;
 
     public Person(String name, int age) {
         this.name = name;
