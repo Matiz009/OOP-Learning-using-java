@@ -1,7 +1,7 @@
 package polymorphism;
 public class Main {
     public static void main(String[] args) {
-       
+
        CommissionEmployee comp = new CommissionEmployee("Jack","E12340",120.00);
         comp.calculateSalary(comp.getWorkingHours());
         System.out.println("Total salary: "+comp.salary);
