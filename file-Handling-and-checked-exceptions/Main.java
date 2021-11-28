@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.print("Enter the name and the path at which you want to save the file[Path must be like this E:\\sample.docx]: ");
