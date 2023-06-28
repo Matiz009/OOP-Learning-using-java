@@ -1,3 +1,7 @@
+package com.first_lecture;
+
+import static com.second_lecture.Main.printSomething;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,9 +15,10 @@ public class Main {
         mati.marks=450;
         System.out.println(mati.name+": "+mati.marks);
         Student std;
-        for (int i = 0; i < 10000000; i++) {
-            std=new Student(400,"Random Name","SP20-BSE-00");
-        }
+//        for (int i = 0; i < 10000000; i++) {
+//            std=new Student(400,"Random Name","SP20-BSE-00");
+//        }
 
+        printSomething();
     }
 }
