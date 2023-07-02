@@ -5,6 +5,7 @@ public class Box {
     double height;
     double width;
     private double size;
+    double weight=20;
 
     public double getSize() {
         return size;
@@ -29,6 +30,7 @@ public class Box {
         this.height = height;
         this.width = width;
         setSize(size);
+        System.out.println("Box");
     }
     //cube
     Box(double side){
@@ -41,7 +43,8 @@ public class Box {
         this.height=old.height;
         this.width=old.width;
     }
-    public void info(){
-        System.out.println("Running the box");
+    public double areaCal(){
+        System.out.print("Area: ");
+        return length*Math.PI;
     }
 }

@@ -9,7 +9,10 @@ public class BoxWithWeight extends Box{
 
     public BoxWithWeight(double length, double height, double width, double weight,double size) {
         super(length, height, width,size);
+        System.out.println(super.weight);
+        System.out.println(super.areaCal());
         this.weight = weight;
+        System.out.println("Box Weight");
     }
 
     public BoxWithWeight(double side, double wight) {
